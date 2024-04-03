@@ -96,6 +96,20 @@ img {
 	width: 100%;
 }
 
+.gameboard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: -23px;
+}
+
+.signature {
+	writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    margin-left: 5px;
+    color: white;
+}
+
 .tile {
 	width: 52px;
 	height: 52px;
@@ -190,6 +204,10 @@ img {
 
 .lavender-border {
     border-color: #d0aafd;
+}
+
+.lavender-text {
+	color: #d0aafd;
 }
 
 /* Annimations */

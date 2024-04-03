@@ -34,12 +34,15 @@ document.addEventListener("keydown", function(e) {
 // sets up the gameboard with NUMBER_OF_GUESSES rows and NUMBER_OF_TILES + the number of blank tiles tiles
 function setUpGameBoard() {
     let gameboard = document.querySelector(".gameboard");
+    let rows = document.createElement("div");
+    rows.classList.add("rows");
+    gameboard.appendChild(rows);
 
     for (let i = 0; i < NUMBER_OF_GUESSES; i++) {
         let row = document.createElement("div");
         row.classList.add("row");
         row.id = "row" + i;
-        gameboard.appendChild(row);
+        rows.appendChild(row);
 
         let tileNum = 0;
         for (let j = 0; j < secretMessage.length; j++) {
@@ -54,6 +57,11 @@ function setUpGameBoard() {
             row.appendChild(tile);
         }
     }
+
+    let signature = document.createElement("div");
+    signature.classList.add("signature");
+    signature.innerText = "Created by Arjun Singla";
+    gameboard.appendChild(signature);
 }
 
 function setUpKeyBoard() {
@@ -200,6 +208,9 @@ function birthdayExtras() {
 
         // set navbar text
         navbar.innerHTML = "<h1>BIRTHDAY</h1>";
+
+        // add signature
+        document.querySelector(".signature").classList.add("lavender-text");
 
         // play the song!
         let audio = new Audio('https://cdn.jsdelivr.net/gh/arjunsingla/arjunsingla.github.io@main/birthdaybitch.mp3');
