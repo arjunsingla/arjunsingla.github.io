@@ -144,7 +144,7 @@ function setUpNavbar() {
 
     right.innerHTML = helpIconHTML + statsIconHTML + settingsIconHTML + subscribeButtonHTML;
 
-    navbar.innerHTML = "<h1>Jordan Year</h1>"
+    navbar.innerHTML = "<h1>Happy...</h1>"
 }
 
 /* Annimations */
