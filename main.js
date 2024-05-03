@@ -143,6 +143,8 @@ function setUpNavbar() {
     let subscribeButtonHTML = `<button type="button" class="subscribe">Subscribe to Games</button>`;
 
     right.innerHTML = helpIconHTML + statsIconHTML + settingsIconHTML + subscribeButtonHTML;
+
+    navbar.innerHTML = "<h1>Jordan Year</h1>"
 }
 
 /* Annimations */
